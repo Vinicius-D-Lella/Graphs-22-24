@@ -2,7 +2,7 @@ import streamlit as st
 
 pages = {
     "Home": [
-        st.Page("data/home.py", title="Home"),
+        st.Page("estados/home.py", title="Home"),
     ],
     "Estados": [
         #st.Page("estados/acre.py", title="Acre"),
