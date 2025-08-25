@@ -161,7 +161,7 @@ with selectState:
 with selectYear:
     year = st.selectbox('Selecione o Ano', ['2022', '2024'])
 
-database = pd.read_csv(F'data\{state}_{year}.csv', encoding="latin1", sep=",")
+database = pd.read_csv(F'data{state}_{year}.csv', encoding="latin1", sep=",")
 siglas = pd.read_csv(F'data\SIGLAS-{year}.csv', encoding="latin1", sep=",")
 
 
