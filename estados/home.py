@@ -161,10 +161,9 @@ with selectState:
 with selectYear:
     year = st.selectbox('Selecione o Ano', ['2022', '2024'])
 
-state = "\" + state
 
-database = pd.read_csv(F'data{state}_{year}.csv', encoding="latin1", sep=",")
-siglas = pd.read_csv(F'data\SIGLAS-{year}.csv', encoding="latin1", sep=",")
+database = pd.read_csv(r'data\{state}_{year}.csv', encoding="latin1", sep=",")
+siglas = pd.read_csv(r'data\SIGLAS-{year}.csv', encoding="latin1", sep=",")
 
 
 partidos = st.multiselect('Selecione os Partidos', siglas['SIGLA'].values, default=["PT","PL","NOVO","PSOL","UNIÃO"])
